@@ -55,4 +55,37 @@ We are still considering release of the larger models.
 
 ## License
 
+
+## Setup Steps
+
+1. Download the models
+```shell
+python download_model.py 117m
+```
+2. Install the python dependencies
+```shell
+pip install numpy
+pip install tensorflow
+pip install -r requirements.txt
+```
+
+## Run the app
+
+```shell
+# Linux
+python3 src/generate_unconditional_samples.py  | tee samples
+
+# With param 
+python3 src/generate_unconditional_samples.py --top_k 40 --temperature 0.7 | tee samples
+
+# Interactive mode
+python3 src/interactive_conditional_samples.py --top_k 40
+```
+
+
+
+
+
+
+
 [MIT](./LICENSE)
