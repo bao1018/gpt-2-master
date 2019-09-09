@@ -58,15 +58,18 @@ We are still considering release of the larger models.
 
 ## Setup Steps
 
-1. Download the models
-```shell
-python download_model.py 117m
-```
-2. Install the python dependencies
+> Run base on Python 3
+
+1. Install the python dependencies
 ```shell
 pip install numpy
 pip install tensorflow
 pip install -r requirements.txt
+```
+2. Download the models
+
+```shell
+python download_model.py 117m
 ```
 
 ## Run the app
