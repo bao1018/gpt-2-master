@@ -6,7 +6,7 @@ Related Repo
 
 ## Overall Tech Arch Diagram
 
-![Image of Arch Design](https://ibb.co/d0Cj7r5)
+![Image of Arch Design](https://i.imgur.com/I1Y3GiG.png)
 
 # gpt-2
 
