@@ -1,0 +1,1 @@
+tensorflow_model_server --model_base_path=/home/wizarmon/Workspace/rain/models/use --rest_api_port=8501

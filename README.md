@@ -3,6 +3,11 @@
 Related Repo
 > https://github.com/bao1018/seifer
 
+
+## Overall Tech Arch Diagram
+
+![Image of Arch Design](https://ibb.co/d0Cj7r5)
+
 # gpt-2
 
 Code from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
@@ -56,8 +61,6 @@ We may release code for evaluating the models on various benchmarks.
 
 We are still considering release of the larger models.
 
-## License
-
 
 ## Setup Steps
 
@@ -74,8 +77,11 @@ pip install -r requirements.txt
 ```shell
 python download_model.py 124m
 ```
+3. Download the serving model
+TBD，send email to github repo owner for getting that data
 
-## Run the app
+
+## Test GPT 2.0 NLP feature
 
 ```shell
 # Linux
@@ -86,7 +92,17 @@ python3 src/generate_unconditional_samples.py --top_k 40 --temperature 0.7 | tee
 
 # Interactive mode
 python3 src/interactive_conditional_samples.py --top_k 40
+
 ```
+
+## Run the GPT 2 Service
+
+```shell
+### the path of serving: models should be replaced by your actual codebase path
+docker run -t --rm -p 8501:8501 -v /Users/jbao009/Documents/github/wb/gpt-2-master/serving:/models -e MODEL_NAME=use tensorflow/serving
+```
+
+
 
 
 
