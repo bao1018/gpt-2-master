@@ -1,5 +1,8 @@
 **Status:** Archive (code is provided as-is, no updates expected)
 
+Related Repo
+> https://github.com/bao1018/seifer
+
 # gpt-2
 
 Code from the paper ["Language Models are Unsupervised Multitask Learners"](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf).
@@ -69,7 +72,7 @@ pip install -r requirements.txt
 2. Download the models
 
 ```shell
-python download_model.py 117m
+python download_model.py 124m
 ```
 
 ## Run the app
